@@ -49,5 +49,3 @@ def explain_vibrato():
 def explain_parts():
     term = random.choice(["action", "marker dots", "the nut", "the saddle", "changing a string", "tuning the bass guitar"])
     return f'Explain the following term: "{term}"'
-
-print(explain_parts())
