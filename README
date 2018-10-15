@@ -1,0 +1,65 @@
+Registry of Guitar Tutors (RGT) is a globally recognised organisation for guitar tuition and examination.
+
+More information about the organisation can be found on their webiste https://rgt.org/
+
+Bass-Grade-Eight is a collection of Python modules that simulate aspects of the Grade 8 examination for Bass Guitar.
+
+Grade 8 is a synoptic exam therefore material from Grades 6 and 7 are included where appropriate.
+
+This is forms part of a personal project to develop an app that wholly simulates a Grade 8 examination.
+
+Where candidates can choose an option (for example, which 2 bass patterns to prepare) I have only simulated my choices.
+
+Each module is explained in more detail below:
+
+gradefuncs.py
+
+    A set of functions with specific implementations in the other scripts.
+    This module is imported and used in all other modules.
+
+arps.py
+    
+    This generates names of arpeggios required for Grades 6 through 8.
+    Arpeggios must be played from memory.
+
+scales.py
+
+    This generates names of scales required for Grades 6 through 8.
+    Scales must be played from memory.
+    
+basspatterns.py
+
+    This generates neatly formatted chord sequences corresponding to the bass patterns for Grade 8.
+    As this is a personal project, only the 2 bass patterns I have chosen have been simulated.
+    RGT provide an example chord sequence for each pattern , which has been transposed to all keys.
+    A randomly generated pattern in all keys that follows the geenral convention of the example is also defined.
+
+performance.py
+
+    This generates a chord sequence in line with the constraints given by RGT Grade 8.
+    Several approaches are used:
+        The sequence is weighted to usually start on the tonic chord
+        Diatonic chords and common chromatic chords are generated for each degree of the tonic scale
+        Common chromatic substitutions are generated
+        Secondary harmony is implemented (secondary dominants, brief key modulations)
+        Where the tonic chord for the key used is not emphasised, sequences will have a modal quality
+        Common sub-sequences are generated (ii-V-I, iv-IV etc..)
+    This module works well as-is but there are some improvements to be made:
+        inclusion of split bars (2 chords per bar)
+        inclusion of chord inversions
+    This module is therefore unfinished
+
+musicianship.py
+
+    This tests candidates knowledge of their instrument and music theory
+    From this section onwards, the exam simulation will rely much less on scripted functions
+    This section has been simulated where possible
+    This module is currently unfinished as only the Grade 6 section has been written thus far
+    
+The remainder of the examination consists of two sections: "Aural Assessment" and "Specialism"
+
+"Aural Assessment" involves the examiner playing an unseen melody or rhythm and the candidate repeating it back to them
+
+This could be simulated using external libraries such as lilypad or isobar, and will be considered once performance.py and musicianship.py is completed
+
+"Specialism" involves the candidate playing a prepared piece, and does not require and scripted functions to simulate
