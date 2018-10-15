@@ -1,42 +1,42 @@
-Registry of Guitar Tutors (RGT) is a globally recognised organisation for guitar tuition and examination.
+Registry of Guitar Tutors (RGT) is a globally recognised organisation for guitar tuition and examination
 
-More information about the organisation can be found on their webiste https://rgt.org/
+More information about the organisation can be found on their website https://rgt.org/
 
-Bass-Grade-Eight is a collection of Python modules that simulate aspects of the Grade 8 examination for Bass Guitar.
+Bass-Grade-Eight is a collection of Python modules that simulate aspects of the Grade 8 examination for Bass Guitar
 
-Grade 8 is a synoptic exam therefore material from Grades 6 and 7 are included where appropriate.
+Grade 8 is a synoptic exam therefore material from Grades 6 and 7 are included where appropriate
 
-This is forms part of a personal project to develop an app that wholly simulates a Grade 8 examination.
+These modules will form part of a personal project to develop an app that wholly simulates a Grade 8 examination
 
-Where candidates can choose an option (for example, which 2 bass patterns to prepare) I have only simulated my choices.
+Where candidates can choose an option (for example, which 2 bass patterns to prepare) I have only simulated my choices
 
 Each module is explained in more detail below:
 
 gradefuncs.py
 
-    A set of functions with specific implementations in the other scripts.
-    This module is imported and used in all other modules.
+    A set of functions with specific implementations in the other scripts
+    This module is imported and used in all other modules
 
 arps.py
     
-    This generates names of arpeggios required for Grades 6 through 8.
-    Arpeggios must be played from memory.
+    This generates names of arpeggios required for Grades 6 through 8
+    Arpeggios must be played from memory
 
 scales.py
 
-    This generates names of scales required for Grades 6 through 8.
-    Scales must be played from memory.
+    This generates names of scales required for Grades 6 through 8
+    Scales must be played from memory
     
 basspatterns.py
 
-    This generates neatly formatted chord sequences corresponding to the bass patterns for Grade 8.
-    As this is a personal project, only the 2 bass patterns I have chosen have been simulated.
-    RGT provide an example chord sequence for each pattern , which has been transposed to all keys.
-    A randomly generated pattern in all keys that follows the geenral convention of the example is also defined.
+    This generates neatly formatted chord sequences corresponding to the bass patterns for Grade 8
+    As this is a personal project, only the 2 bass patterns I have chosen have been simulated
+    RGT provide an example chord sequence for each pattern , which has been transposed to all keys
+    A randomly generated pattern in all keys that follows the geenral convention of the example is also defined
 
 performance.py
 
-    This generates a chord sequence in line with the constraints given by RGT Grade 8.
+    This generates a chord sequence in line with the constraints given by RGT Grade 8
     Several approaches are used:
         The sequence is weighted to usually start on the tonic chord
         Diatonic chords and common chromatic chords are generated for each degree of the tonic scale
